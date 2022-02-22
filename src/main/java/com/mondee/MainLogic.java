@@ -13,6 +13,7 @@ public class MainLogic {
 		
 		AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfiguration.class);
 		com.around.HdfcBank hb = (com.around.HdfcBank) ac.getBean("pfb");
+		//HdfcBank hb = ac.getBean("pfb");
 		hb.withdraw();
 		hb.deposit();
 	}
